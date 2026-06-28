@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+# License: GPLv3 Copyright: 2020, Kovid Goyal <kovid at kovidgoyal.net>
+
 import json
 
 from calibre import prepare_string_for_xml
@@ -170,7 +174,7 @@ class BBCNews(BasicNewsRecipe):
         ('UK', 'https://feeds.bbci.co.uk/news/uk/rss.xml'),
         ('World', 'https://feeds.bbci.co.uk/news/world/rss.xml'),
         # ("England", "https://feeds.bbci.co.uk/news/england/rss.xml"),
-        # ("Scotland", "https://feeds.bbci.co.uk/news/scotland/rss.xml"),
+        ("Scotland", "https://feeds.bbci.co.uk/news/scotland/rss.xml"),
         # ("Wales", "https://feeds.bbci.co.uk/news/wales/rss.xml"),
         # ("N. Ireland", "https://feeds.bbci.co.uk/news/northern_ireland/rss.xml"),
         # ("Africa", "https://feeds.bbci.co.uk/news/world/africa/rss.xml"),
@@ -178,23 +182,23 @@ class BBCNews(BasicNewsRecipe):
         # ("Europe", "https://feeds.bbci.co.uk/news/world/europe/rss.xml"),
         # ("Latin America", "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml"),
         # ("Middle East", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
-        ('US & Canada', 'https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml'),
-        ('Politics', 'https://feeds.bbci.co.uk/news/politics/rss.xml'),
-        ('Science/Environment',
-         'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml'),
-        ('Technology', 'https://feeds.bbci.co.uk/news/technology/rss.xml'),
-        ('Entertainment/Arts',
-         'https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml'),
+        #('US & Canada', 'https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml'),
+        #('Politics', 'https://feeds.bbci.co.uk/news/politics/rss.xml'),
+       # ('Science/Environment',
+       #  'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml'),
+       # ('Technology', 'https://feeds.bbci.co.uk/news/technology/rss.xml'),
+       # ('Entertainment/Arts',
+      #   'https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml'),
         # ("Health", "https://feeds.bbci.co.uk/news/health/rss.xml"),
         # ("Education/Family", "https://feeds.bbci.co.uk/news/education/rss.xml"),
-        ('Business', 'https://feeds.bbci.co.uk/news/business/rss.xml'),
+       # ('Business', 'https://feeds.bbci.co.uk/news/business/rss.xml'),
         # ("Newsbeat", "https://www.bbc.co.uk/newsbeat/rss.xml"),
         # ("Click", "http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/programmes/click_online/rss.xml"),
         # ("Blog: Mark D'Arcy (Parliamentary Correspondent)", "https://feeds.bbci.co.uk/news/correspondents/markdarcy/rss.sxml"),
         # ("Blog: Robert Peston (Business Editor)", "https://feeds.bbci.co.uk/news/correspondents/robertpeston/rss.sxml"),
         # ("Blog: Stephanie Flanders (Economics Editor)", "https://feeds.bbci.co.uk/news/correspondents/stephanieflanders/rss.sxml"),
-        ('Sport Front Page',
-         'http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/front_page/rss.xml'),
+        #('Sport Front Page',
+        # 'http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/front_page/rss.xml'),
         # ("Football", "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/football/rss.xml"),
         # ("Cricket", "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/cricket/rss.xml"),
         # ("Rugby Union", "http://newsrss.bbc.co.uk/rss/sportonline_uk_edition/rugby_union/rss.xml"),
@@ -232,7 +236,7 @@ class BBCNews(BasicNewsRecipe):
         # ("Canolbarth", "https://feeds.bbci.co.uk/newyddion/canolbarth/rss.xml"),
         # ("De-Ddwyrain", "https://feeds.bbci.co.uk/newyddion/de-ddwyrain/rss.xml"),
         # ("De-Orllewin", "https://feeds.bbci.co.uk/newyddion/de-orllewin/rss.xml"),
-        ('News', 'https://feeds.bbci.co.uk/news/rss.xml'),
+        #('News', 'https://feeds.bbci.co.uk/news/rss.xml'),
     ]
 
     #    **** SELECT YOUR USER PREFERENCES ****
@@ -350,7 +354,7 @@ class BBCNews(BasicNewsRecipe):
             font-size:small;
         }
     '''
-    cover_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/768px-BBC_News_2019.svg.png'
+    cover_url = 'https://deadline.com/wp-content/uploads/2016/06/bbc-logo.jpg?w=681&h=383&crop=1'
     masthead_url = 'https://upload.wikimedia.org/wikipedia/commons/4/41/BBC_Logo_2021.svg'
 
     def preprocess_html(self, soup):
