@@ -172,9 +172,9 @@ class BBCNews(BasicNewsRecipe):
     # Select / de-select the feeds you want in your ebook.
     feeds = [
         ('UK', 'https://feeds.bbci.co.uk/news/uk/rss.xml'),
-        ('World', 'https://feeds.bbci.co.uk/news/world/rss.xml'),
+        # ('World', 'https://feeds.bbci.co.uk/news/world/rss.xml'),
         # ("England", "https://feeds.bbci.co.uk/news/england/rss.xml"),
-        ("Scotland", "https://feeds.bbci.co.uk/news/scotland/rss.xml"),
+        # ("Scotland", "https://feeds.bbci.co.uk/news/scotland/rss.xml"),
         # ("Wales", "https://feeds.bbci.co.uk/news/wales/rss.xml"),
         # ("N. Ireland", "https://feeds.bbci.co.uk/news/northern_ireland/rss.xml"),
         # ("Africa", "https://feeds.bbci.co.uk/news/world/africa/rss.xml"),
