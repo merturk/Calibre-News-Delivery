@@ -253,7 +253,7 @@ class BBCNews(BasicNewsRecipe):
     # I've never seen more than about 70 articles in a single feed in the
     # BBC feeds.
     #
-    max_articles_per_feed = 100
+    max_articles_per_feed = 50
 
     # The max age of articles which may be downloaded from each feed. This is
     # specified in days - note fractions of days are allowed, Eg. 2.5 (2 and a
